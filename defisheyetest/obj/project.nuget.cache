@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "DGKj4GBi2jLjMXrhKJG+b6kRtmxXcvgZj8m2XNH1/pCR2V2w4rifRf7Nd5y6ejoX1fXV0jt5ZrLjrxVejWJuZQ==",
+  "success": true,
+  "projectFilePath": "D:\\Downloads\\defisheyetest 123\\defisheyetest\\defisheyetest\\DeFishEye.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\danik\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\danik\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

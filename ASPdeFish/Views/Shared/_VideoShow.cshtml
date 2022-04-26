@@ -1,0 +1,14 @@
+﻿
+@model ASPdeFish.Models.Video
+@{
+
+}
+<div class="video">
+   
+        @if (@Model != null)
+        {
+            <video style="margin-bottom: 24px; position: absolute; bottom: -370px; left: 669px;"
+                   src=@Url.Content("~/videos/" + Model.VideoName) controls width="500" />
+        }
+</div>
+

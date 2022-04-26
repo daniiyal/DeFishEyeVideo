@@ -1,0 +1,19 @@
+﻿body {
+    color: wheat
+}
+#custom-handle {
+    width: 3em;
+    height: 1.6em;
+    top: 50%;
+    margin-top: -.8em;
+    text-align: center;
+    line-height: 1.6em;
+}
+
+#custom-input{
+    display: none;
+}
+
+.container img{
+    margin: 20px;
+}

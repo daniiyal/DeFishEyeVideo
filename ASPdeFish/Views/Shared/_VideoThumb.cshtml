@@ -1,0 +1,36 @@
+﻿
+@model ASPdeFish.Models.Video
+@{
+
+}
+
+<div class="col-6">
+    <div class="thumbnail">
+        @{ if (@Model != null)
+            {
+                <img class="img-thumbnail" style="margin-bottom: 24px; position: absolute; bottom: -60px; left: 669px; " src=@Url.Content("~/images/" + Model.ThumbName) width="500px" />
+            }
+        }
+    </div>
+</div>
+
+<form asp-controller="Thumb" asp-action="ChangeImage" method="post">
+    <label style="margin-bottom: 10px" for="#slider">Сдвиньте ползунок для изменения степени искажения</label>
+    <div id="slider" name="factor">
+        <input id="custom-input" name="factor" />
+        <div id="custom-handle" class="ui-slider-handle"></div>
+    </div>
+    <input class="btn btn-primary" style="margin-top: 24px" id="changeSubmit" name="change" type="submit" value="Применить" />
+</form>
+
+<form asp-controller="Video" asp-action="ChangeVideo" method="post" style="margin-top: 24px">
+    @if (Model != null)
+    {
+        <input value="@Model.Factor" id="custom-video-input" name="factor" />
+    }
+    else
+    {
+        <input value="5.0" id="custom-video-input" name="factor" />
+    }
+    <input class="btn btn-primary" id="changeSubmit" name="change" type="submit" value="Преобразовать видео" />
+</form>

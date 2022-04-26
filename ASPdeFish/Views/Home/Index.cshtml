@@ -1,0 +1,36 @@
+﻿@using ASPdeFish.Models
+@model Video
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container-xxl" style="margin-top: 1.5rem;">
+    <div class="row align-items-start" style="position: relative">
+        <div class="col-6">
+            <div class="card">
+                <div class="card-body">
+                    <form asp-controller="Upload" asp-action="UploadVideo"
+                          enctype="multipart/form-data" method="post">
+                        <div class="row">
+                            <div class="form-group col-8 mb-3">
+                                <div class="mb-4">
+                                    <input type="file" name="video" accept="video/*" class="form-control" id="formFile" />
+                                </div>
+                            </div>
+                            <div class="col-4 mb-4">
+                                <input type="submit" value="Отправить" class="btn btn-primary" />
+                            </div>
+                        </div>
+                    </form>
+                    <div class="thumbnail">
+                        <partial name="~/Views/Shared/_VideoThumb.cshtml" model="Model">
+                    </div>
+                    <div class="video">
+                        <partial name="~/Views/Shared/_VideoShow.cshtml" model="Model">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
